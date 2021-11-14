@@ -15,7 +15,7 @@ export default class RecireService {
     return response.data.meals
   }
   static async getMealByName(name) {
-    const response = await axios.get(`https:/www.themealdb.com/api/json/v1/1/search.php?s=${name}`)
+    const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`)
     return response.data.meals
   }
 }
