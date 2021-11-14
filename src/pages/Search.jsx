@@ -17,8 +17,7 @@ const Search = () => {
 
 
   async function fetchMeal(name) {
-    const mealInput = name
-    const mealName = await RecireService.getMealByName(mealInput)
+    const mealName = await RecireService.getMealByName(name)
     setMeal(mealName)
   }
 
