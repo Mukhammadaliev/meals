@@ -23,7 +23,8 @@ const ResipeInfo = () => {
   }
 
   return(
-    <div  className='recipe-info'>
+    <div className='container'>
+      <div  className='recipe-info'>
       {!meal ? <Spinner /> :
         (<div className='resipe'>
           <button className='go-back' onClick={goBack}>go back</button>
@@ -40,6 +41,7 @@ const ResipeInfo = () => {
 
       }
 
+    </div>
     </div>
   )
 }

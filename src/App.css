@@ -18,7 +18,7 @@
   max-width: 1200px;
   width: 100%;
   margin-left: auto;
-  padding: 0 20px;
+  padding: 0 15px;
   margin-right: auto;
 }
 .header-link {
@@ -85,7 +85,7 @@
 }
 .resipe {
   max-width: 1000px;
-  padding: 0 20px;
+  padding: 0 0px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -111,12 +111,27 @@ button {
   border: none;
   margin-bottom: 20px;
 }
+.meal-youtube {
+  margin: 30px 0;
+  width: 500px;
+  height: 400px;
+  outline: 0;
+  border: 0;
+}
 .recipe-info .go-back {
   margin-bottom: 20px;
 }
+@media (max-width: 600px) {
+  .resipe img {
+    width: 100%;
+  }
+  .meal-youtube {
+    width: 100%;
+  }
+}
 
 .search input {
-  width: 800px;
+  width: 100%;
   outline: 0;
   border: 0;
   border-bottom: 1px solid #2B303B;
@@ -134,13 +149,6 @@ button {
   text-align: center;
   font-size: 30px;
   margin-bottom: 15px;
-}
-.meal-youtube {
-  margin: 30px 0;
-  width: 500px;
-  height: 400px;
-  outline: 0;
-  border: 0;
 }
 .pagination {
   list-style: none;
