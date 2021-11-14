@@ -6,7 +6,7 @@ import Pagination from "../components/Pagination";
 
 const Search = () => {
 
-  const [input, setInput] = useState('')
+  const [input, setInput] = useState(' ')
   const [meal, setMeal] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
   const [limit] = useState(8)
@@ -16,9 +16,10 @@ const Search = () => {
   }, [input])
 
 
-  async function fetchMeal(name) {
-    const mealName = await RecireService.getMealByName(name)
-    setMeal(mealName)
+  async function fetchMeal(query) {
+    const text = query
+    const data = await RecireService.getMealByName(text)
+    setMeal(data)
   }
 
 
